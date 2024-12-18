@@ -13,7 +13,7 @@
 }
 
 .logo-black-link {
-  display:flex;
+  display: flex;
   align-self: center;
 }
 
@@ -197,6 +197,7 @@
   margin-left: 40px;
   margin-top: 48px;
   text-transform: uppercase;
+  text-decoration: underline;
 }
 
 .card-text {
@@ -267,7 +268,6 @@
   align-content: start;
   min-height: 180px;
   margin-top: 160px;
-
 }
 
 .address-footer {
