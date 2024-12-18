@@ -1,57 +1,52 @@
-body {
-  font-family: "Raleway", sans-serif;
-}
-
 .header {
   display: grid;
-  width: 1100px;
-  height: 293px;
+  line-height: 293px;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   padding-right: 50px;
   padding-left: 50px;
-  padding-bottom: 20px;
 }
 
-.logo {
+.logo-black {
   width: 148px;
   height: 105px;
+}
+
+.logo-black-link {
+  display:flex;
+  align-self: center;
 }
 
 .header-menu {
   display: flex;
   list-style: circle;
   gap: 33px;
-  padding-top: 18px;
 }
 
 .header-menu li:first-child {
   list-style: none;
-  padding-left: 0;
 }
 
 .address {
   font-size: 18px;
   font-style: normal;
-  max-width: 240px;
-  margin-left: 184px;
   justify-self: end;
-  padding-top: 16px;
   line-height: 24px;
+  max-width: 240px;
 }
 
 .navigation {
   font-size: 18px;
 }
 
-.email-header {
-  text-decoration: none;
+.underline-contact {
+  text-decoration: underline;
 }
 
 .cover {
   position: relative;
   width: 1100px;
-  height: 757px;
+  min-height: 757px;
   background-image: url(../images/cover.jpg);
   background-size: cover;
   background-position: bottom;
@@ -64,50 +59,48 @@ body {
 .overlay {
   position: absolute;
   z-index: 1;
-  top: 0;
-  left: 0;
   background-color: rgba(0, 0, 0, 0.6);
-  width: 100%;
-  height: 100%;
+  inset: 0;
 }
 
 .cover-content-head {
-  position: absolute;
+  position: relative;
   z-index: 2;
-  width: 1000px;
+  max-width: 1000px;
   font-size: 100px;
   margin-left: 50px;
   margin-right: 50px;
-  margin-top: 165px;
   letter-spacing: 30px;
+  line-height: 135px;
 }
 
-.ono {
+.cover-content-head-start {
   display: block;
+  padding-top: 156px;
 }
 
-.tebe {
+.cover-content-head-center {
   display: block;
   text-align: center;
-  margin-top: -100px;
   margin-left: 30px;
 }
 
-.nado {
+.cover-content-head-end {
   display: block;
   text-align: right;
-  margin-top: -100px;
   margin-right: -30px;
 }
 
 .cover-content {
-  position: absolute;
+  display: flex;
+  position: relative;
   z-index: 2;
   width: 1000px;
   justify-content: space-between;
   align-items: center;
   margin-right: 50px;
   margin-left: 50px;
+  margin-top: 95px;
 }
 
 .nobodey {
@@ -120,7 +113,6 @@ body {
 }
 
 .cover-content p {
-  margin-top: 670px;
   font-size: 22px;
   word-spacing: 20px;
 }
@@ -129,10 +121,10 @@ body {
   display: inline-block;
   vertical-align: middle;
   margin: 0;
-  position: absolute;
+  position: relative;
   z-index: 2;
-  width: 256px;
-  height: 51px;
+  min-width: 256px;
+  min-height: 51px;
   background-color: transparent;
   border: solid;
   border-color: white;
@@ -140,8 +132,6 @@ body {
   font-family: "Raleway", sans-serif;
   font-size: 22px;
   color: white;
-  top: 655px;
-  left: 795px;
   font-weight: 500;
   text-transform: uppercase;
 }
@@ -163,8 +153,7 @@ body {
 .lots-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 23px;
+  gap: 25px;
   color: white;
   padding-top: 25px;
 }
@@ -196,7 +185,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  height: 596px;
+  min-height: 596px;
 }
 
 .card-header {
@@ -204,7 +193,7 @@ body {
   z-index: 2;
   font-weight: 700;
   font-size: 22px;
-  width: 254px;
+  max-width: 254px;
   margin-left: 40px;
   margin-top: 48px;
   text-transform: uppercase;
@@ -220,7 +209,11 @@ body {
   margin-bottom: 48px;
 }
 
-.watch-more {
+.link-without-underline {
+  text-decoration: none;
+}
+
+.lots-bottom-link {
   font-size: 20px;
   margin-top: 31px;
   margin-left: 40px;
@@ -229,8 +222,6 @@ body {
 .about {
   margin-right: 24px;
   margin-left: 24px;
-  margin-bottom: 180px;
-  margin-top: 120px;
   display: grid;
   grid-template-columns: 334px 1fr;
 }
@@ -240,6 +231,7 @@ body {
   background-color: black;
   border-radius: 50%;
   width: 240px;
+  height: 240px;
   justify-content: center;
   align-items: center;
   margin: 35px 72px 320px 48px;
@@ -247,11 +239,12 @@ body {
 
 .logo-about img {
   width: 148px;
+  height: 148px;
 }
 
 .about-description {
   margin-top: 133px;
-  width: 688px;
+  min-width: 693px;
   margin-left: 26px;
 }
 
@@ -262,13 +255,10 @@ body {
   text-transform: uppercase;
 }
 
-.text-about-begining {
-  font-size: 20px;
-  margin-bottom: 24px;
-}
-
 .text-about {
   font-size: 20px;
+  font-size: 20px;
+  margin-bottom: 24px;
 }
 
 .footer {
@@ -276,8 +266,9 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-between;
   align-content: start;
-  height: 180px;
-  width: 1100px;
+  min-height: 180px;
+  margin-top: 160px;
+
 }
 
 .address-footer {
@@ -305,6 +296,6 @@ body {
   margin-left: 30px;
 }
 
-.social-icon {
+.footer__social-list-item {
   width: 48px;
 }

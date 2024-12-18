@@ -13,18 +13,26 @@
     <header class="header">
       <nav class="navigation">
         <ul class="header-menu">
-          <li class="header-menu-item-1"><a>главная</a></li>
-          <li class="header-menu-item"><a href="#">посмотреть лоты</a></li>
-          <li class="header-menu-item"><a href="#">об аукционе</a></li>
+          <li><a>главная</a></li>
+          <li><a href="#">посмотреть лоты</a></li>
+          <li><a href="#">об аукционе</a></li>
         </ul>
       </nav>
-      <div class="logo">
-        <a><img src="images/logo-black.svg" alt="logo-black"/></a>
-      </div>
+
+      <a class="logo-black-link" href="#">
+        <img
+          class="logo-black"
+          src="images/logo-black.svg"
+          alt="лого оно тебе надо"
+        />
+      </a>
+
       <address class="address">
         <a href="tel:+99995555555">+9 999 555 5555</a>
         <br />
-        <a href="mailto:info@sobaka.ge" class="email-header">info@sobaka.ge</a>
+        <a href="mailto:info@sobaka.ge" class="underline-contact"
+          >info@sobaka.ge</a
+        >
         <br />
         наб. Принсенграхт 263- 265, Амстердам
       </address>
@@ -34,9 +42,9 @@
       <section class="cover">
         <div class="overlay"></div>
         <h1 class="cover-content-head">
-          <span class="ono">оно</span> <br />
-          <span class="tebe">тебе</span> <br />
-          <span class="nado">надо</span> <br />
+          <span class="cover-content-head-start">оно</span>
+          <span class="cover-content-head-center">тебе</span>
+          <span class="cover-content-head-end">надо</span>
         </h1>
         <div class="cover-content">
           <p>
@@ -44,8 +52,8 @@
             <span class="nobodey">в которые никто </span>
             <span class="believe"> не верил</span>
           </p>
+          <button class="cover-content-button">Сделать ставку</button>
         </div>
-        <button class="cover-content-button">Сделать ставку</button>
       </section>
 
       <section class="lots">
@@ -56,15 +64,17 @@
             <a href="#">
               <article class="card-article">
                 <div class="overlay"></div>
-                <h3 class="card-header">
-                  Фильм режиссёра, который бросил киношколу
-                </h3>
-                <p class="card-text">
-                  Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
-                  ставка, если бы вы не знали, что режиссёр — Пол Томас
-                  Андерсон?
-                </p>
-              </article>
+                  <h3 class="card-header">
+                    Фильм режиссёра, который бросил киношколу
+                  </h3>
+                    <a href="#" class="link-without-underline">
+                      <p class="card-text">
+                        Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
+                        ставка, если бы вы не знали, что режиссёр — Пол Томас
+                        Андерсон?
+                      </p>
+                    </a>
+               </article>
             </a>
           </li>
 
@@ -72,17 +82,19 @@
             <a href="#">
               <article class="card-article">
                 <div class="overlay"></div>
-                <h3 class="card-header">
+                  <h3 class="card-header">
                   Книга, где описан один скучный день из жизни рекламного агента
-                </h3>
-                <p class="card-text">
-                  Объёмом почти в тысячу страниц. Иногда без знаков препинания и
-                  с переходами на древнеанглийский. В ней одновременно
-                  рассказывается о 16 июня 1904 года и об истории литературы,
-                  начиная с античных времён. И это всё накладывается на
-                  эпическую поэму Гомера. Сколько бы вы поставили на «Улисса»
-                  Джеймса Джойса?
-                </p>
+                  </h3>
+                  <a href="#" class="link-without-underline"></a>
+                    <p class="card-text">
+                      Объёмом почти в тысячу страниц. Иногда без знаков препинания и
+                      с переходами на древнеанглийский. В ней одновременно
+                      рассказывается о 16 июня 1904 года и об истории литературы,
+                      начиная с античных времён. И это всё накладывается на
+                      эпическую поэму Гомера. Сколько бы вы поставили на «Улисса»
+                      Джеймса Джойса?
+                    </p>
+                 </a>
               </article>
             </a>
           </li>
@@ -91,29 +103,31 @@
             <a href="#">
               <article class="card-article">
                 <div class="overlay"></div>
-                <h3 class="card-header">
-                  Картина, которую повторит даже 5-летний сын маминой подруги
-                </h3>
-                <p class="card-text">
-                  Ну действительно, там линия, тут кружочек, а здесь и вовсе
-                  что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
-                  котиков... Сколько бы вы на такое поставили, если бы не знали,
-                  что это — одна из революционных работ Кандинского?
-                </p>
-              </article>
+                  <h3 class="card-header">
+                    Картина, которую повторит даже 5-летний сын маминой подруги
+                  </h3>
+                  <a href="#" class="link-without-underline"></a>
+                    <p class="card-text">
+                      Ну действительно, там линия, тут кружочек, а здесь и вовсе
+                      что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
+                      котиков... Сколько бы вы на такое поставили, если бы не знали,
+                      что это — одна из революционных работ Кандинского?
+                    </p>
+                  </a>
+               </article>
             </a>
           </li>
         </ul>
-        <a href=""><p class="watch-more">посмотреть больше</p></a>
+        <a href=""><p class="lots-bottom-link">посмотреть больше</p></a>
       </section>
 
       <section class="about">
         <div class="logo-about">
-          <img src="/images/logo-white.svg" alt="logo white" />
+          <img src="./images/logo-white.svg" alt="logo white" />
         </div>
         <div class="about-description">
           <h2 class="header-about">Об аукционе</h2>
-          <p class="text-about-begining">
+          <p class="text-about">
             Здесь вы не встретите очередное пафосное собрание невероятно
             дорогого антиквариата. Наши лоты вообще не должны были попасть ни на
             один аукцион. Потому что кому нужен дневник девочки-подростка или
@@ -143,25 +157,23 @@
 
       <nav class="navigation-footer">
         <ul class="footer-menu">
-          <li class="header-menu-item-1"><a>главная</a></li>
-          <li class="header-menu-item"><a href="">посмотреть лоты</a></li>
-          <li class="header-menu-item"><a href="">об аукционе</a></li>
+          <li><a>главная</a></li>
+          <li><a href="#">посмотреть лоты</a></li>
+          <li><a href="#">об аукционе</a></li>
         </ul>
       </nav>
 
       <nav class="social">
         <ul class="footer-social">
-          <li class="social-icon youtube">
-            <a href="#"><img src="images/yt.svg" alt="yt-logo"/>
-            </a>
+          <li class="footer__social-list-item">
+            <a href="#"><img src="images/yt.svg" alt="yt-logo" /> </a>
           </li>
-          <li class="social-icon vk">
-            <a href="#"><img src="images/vk.svg" alt="vk-logo"/>
-            </a>
+          <li class="footer__social-list-item">
+            <a href="#"><img src="images/vk.svg" alt="vk-logo" /> </a>
           </li>
-          <li class="social-icon pinterest">
+          <li class="footer__social-list-item">
             <a href="#"
-              ><img src="images/pinterest.svg" alt="pinterest-logo"/>
+              ><img src="images/pinterest.svg" alt="pinterest-logo" />
             </a>
           </li>
         </ul>
