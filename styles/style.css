@@ -1,10 +1,11 @@
 .header {
   display: grid;
-  line-height: 293px;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   padding-right: 50px;
   padding-left: 50px;
+  padding-top: 92px;
+  padding-bottom: 95px;
 }
 
 .logo-black {
@@ -85,10 +86,18 @@
   margin-left: 30px;
 }
 
+.make-them-flex {
+  display: flex;
+  justify-content: end;
+}
+
 .cover-content-head-end {
   display: block;
   text-align: right;
-  margin-right: -30px;
+}
+
+.cover-content-head-last-letter {
+  letter-spacing: 0cap;
 }
 
 .cover-content {
@@ -103,11 +112,11 @@
   margin-top: 95px;
 }
 
-.nobodey {
+.cover-content-without-letter-spasing {
   word-spacing: 17px;
 }
 
-.believe {
+.cover-content-with-letter-spasing {
   word-spacing: 16px;
   padding-left: 4px;
 }
@@ -147,7 +156,8 @@
   font-weight: 700;
   font-size: 50px;
   margin-left: 40px;
-  margin-top: -10px;
+  line-height: 1.2cap;
+  margin-bottom: 7px;
 }
 
 .lots-list {
@@ -235,7 +245,8 @@
   height: 240px;
   justify-content: center;
   align-items: center;
-  margin: 35px 72px 320px 48px;
+  margin-left: 48px;
+  margin-top: 32px;
 }
 
 .logo-about img {
@@ -244,6 +255,8 @@
 }
 
 .about-description {
+  display: flex;
+  flex-direction: column;
   margin-top: 133px;
   min-width: 693px;
   margin-left: 26px;
@@ -266,7 +279,6 @@
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-between;
   align-content: start;
-  min-height: 180px;
   margin-top: 160px;
 }
 
