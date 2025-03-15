@@ -1,6 +1,6 @@
 .page {
   inline-size: 100%;
-  max-inline-size: 1400px;
+  max-inline-size: 1200px;
   margin: 0 auto;
 }
 
@@ -350,7 +350,7 @@
   }
 
   .cover-content p,
-  .cover-content span{
+  .cover-content span {
     letter-spacing: normal;
     word-spacing: normal;
   }
@@ -360,9 +360,104 @@
   }
 }
 
-@media (width <= 376px) {
+@media (width <= 375px) {
   .logo-black {
     width: 74px;
+  }
+
+  .header {
+    padding: 40px 10px 40px 10px;
+  }
+
+  .address {
+    margin-inline-start: 28px;
+    font-size: 14px;
+  }
+
+  .cover {
+    min-height: 100vh;
+    margin-bottom: 50px;
+    padding-block-end: 30px;
+  }
+
+  .cover-content-head {
+    font-size: 70px;
+    margin-left: 15px;
+    margin-right: 15px;
+    letter-spacing: 15px;
+    line-height: 100px;
+  }
+
+  .cover-content-head-start {
+    padding-top: 156px;
+  }
+
+  .cover-content-head-center {
+    margin-inline-start: 0;
+  }
+
+  .cover-content-head-end {
+    display: block;
+    text-align: right;
+  }
+
+  .cover-content p,
+  .cover-content span {
+    font-size: 14px;
+  }
+
+  .cover-content-button {
+    min-width: 135px;
+    min-height: 51px;
+    font-size: 14px;
+  }
+
+  .about {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-inline-size: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .logo-about {
+    width: 120px;
+    height: 120px;
+    margin-left: 0;
+    margin-top: 0;
+    justify-self: center;
+  }
+
+  .logo-about img {
+    width: 74px;
+    height: 74px;
+  }
+
+  .header-about {
+    margin-bottom: 20px;
+    justify-self: center;
+  }
+
+  .lots {
+    margin-block-end: 30px;
+  }
+
+  .footer-social {
+    flex-direction: column;
+  }
+
+  .address-footer {
+    font-size: 14px;
+    margin-inline-start: 0;
+  }
+
+  .footer-menu {
+    font-size: 14px;
+  }
+  .footer {
+    margin: 0 auto;
+    padding-inline-start: 15px;
+    padding-inline-end: 15px;
   }
 
 }
