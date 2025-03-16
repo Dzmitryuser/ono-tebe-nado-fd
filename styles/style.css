@@ -360,7 +360,40 @@
   }
 }
 
-@media (width <= 375px) {
+@media (width <= 580px) {
+  .about {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-inline-size: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .footer-social {
+    flex-direction: column;
+  }
+
+  .header {
+    padding: 40px 10px 40px 10px;
+  }
+
+  .address {
+    margin-inline-start: 28px;
+    font-size: 14px;
+  }
+}
+
+@media (width <= 440px) {
+  .cover-content-button {
+    min-width: 135px;
+    min-height: 51px;
+    font-size: 14px;
+  }
+
+
+}
+
+@media (width <= 400px) {
   .logo-black {
     width: 74px;
   }
@@ -459,5 +492,4 @@
     padding-inline-start: 15px;
     padding-inline-end: 15px;
   }
-
 }
