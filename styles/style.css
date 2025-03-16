@@ -361,6 +361,12 @@
   }
 }
 
+@media (width <= 560px) {
+  .address-footer {
+    font-size: 14px;
+  }
+}
+
 @media (width <= 580px) {
   .about {
     display: grid;
@@ -386,6 +392,26 @@
   .cover-content-head {
     font-size: 75px;
   }
+
+  .social {
+    margin-inline-start: 0;
+  }
+}
+
+@media (width <= 490px) {
+  .footer-menu {
+    font-size: 14px;
+    line-height: 25px;
+  }
+
+  .social {
+    margin-inline-start: 0;
+  }
+
+  .footer {
+    grid-template-columns: 1fr 1fr min-content;
+    padding-inline-end: 15px;
+  }
 }
 
 @media (width <= 440px) {
@@ -396,11 +422,9 @@
   }
 
   .logo-black {
-inline-size: 74px;
-block-size: 52px;
+    inline-size: 74px;
+    block-size: 52px;
   }
-
-
 }
 
 @media (width <= 400px) {
@@ -414,6 +438,10 @@ block-size: 52px;
 
   .address {
     margin-inline-start: 28px;
+    font-size: 14px;
+  }
+
+  .header-menu {
     font-size: 14px;
   }
 
