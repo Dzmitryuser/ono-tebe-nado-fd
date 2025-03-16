@@ -63,6 +63,7 @@
   margin-bottom: 180px;
   color: white;
   text-transform: uppercase;
+  max-inline-size: 100%;
 }
 
 .overlay {
@@ -154,7 +155,6 @@
   margin-right: 24px;
   margin-left: 24px;
   max-inline-size: 100%;
-  max-inline-size: 1400;
 }
 
 .lots-head {
@@ -262,6 +262,7 @@
   display: flex;
   flex-direction: column;
   margin-top: 133px;
+  max-inline-size: 100%;
 }
 
 .header-about {
@@ -381,6 +382,10 @@
     margin-inline-start: 28px;
     font-size: 14px;
   }
+
+  .cover-content-head {
+    font-size: 75px;
+  }
 }
 
 @media (width <= 440px) {
@@ -388,6 +393,11 @@
     min-width: 135px;
     min-height: 51px;
     font-size: 14px;
+  }
+
+  .logo-black {
+inline-size: 74px;
+block-size: 52px;
   }
 
 
@@ -451,6 +461,7 @@
     max-inline-size: 100%;
     padding-right: 15px;
     padding-left: 15px;
+    max-inline-size: 100%;
   }
 
   .logo-about {
